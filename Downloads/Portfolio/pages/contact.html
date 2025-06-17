@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alex Dubois</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-contact">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Alex Dubois</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="processus.html" class="nav-link">Processus</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main">
+        <div class="page-hero">
+            <div class="page-hero-content">
+                <h1 class="page-title animate-on-scroll">Contactez-moi</h1>
+                <p class="page-subtitle animate-on-scroll">Donnons vie à votre projet ensemble</p>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Informations de contact -->
+                    <div class="contact-info animate-on-scroll">
+                        <h2>Parlons de votre projet</h2>
+                        <p>
+                            Que vous ayez un projet précis en tête ou simplement une idée à explorer, 
+                            je serais ravi d'échanger avec vous. Contactez-moi par le moyen qui vous convient le mieux.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-info">
+                                    <h3>Email</h3>
+                                    <p>alex.dubois@email.com</p>
+                                    <span class="method-note">Réponse sous 24h</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-info">
+                                    <h3>Téléphone</h3>
+                                    <p>+33 6 12 34 56 78</p>
+                                    <span class="method-note">Lun-Ven 9h-18h</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-info">
+                                    <h3>Localisation</h3>
+                                    <p>Paris, France</p>
+                                    <span class="method-note">Déplacements possibles</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Suivez-moi</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <span><img src="https://img.icons8.com/?size=96&id=114441&format=png" alt=""></span>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <span><img src="https://img.icons8.com/?size=96&id=32323&format=png" alt=""></span>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Behance">
+                                    <span><img src="https://img.icons8.com/?size=100&id=12599&format=png" alt=""></span>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Dribbble">
+                                    <span><img src="https://img.icons8.com/?size=96&id=xuvGCOXi8Wyg&format=png" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-container animate-on-scroll">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-type">Type de projet *</label>
+                                <select id="project-type" name="project-type" required>
+                                    <option value="">Sélectionnez un type</option>
+                                    <option value="branding">Identité visuelle / Branding</option>
+                                    <option value="web-design">Web Design / UI-UX</option>
+                                    <option value="illustration">Illustration / Art digital</option>
+                                    <option value="packaging">Packaging / Design produit</option>
+                                    <option value="print">Design print / Édition</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget estimé</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez une fourchette</option>
+                                    <option value="1000-3000">1 000€ - 3 000€</option>
+                                    <option value="3000-5000">3 000€ - 5 000€</option>
+                                    <option value="5000-10000">5 000€ - 10 000€</option>
+                                    <option value="10000+">10 000€+</option>
+                                    <option value="to-discuss">À discuter</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">Délai souhaité</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Sélectionnez un délai</option>
+                                    <option value="urgent">Urgent (moins de 2 semaines)</option>
+                                    <option value="1-month">1 mois</option>
+                                    <option value="2-3-months">2-3 mois</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Décrivez votre projet *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Parlez-moi de votre projet, vos objectifs, votre vision..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Je souhaite recevoir des nouvelles de vos projets
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    J'accepte que mes données soient utilisées pour me recontacter *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <span class="btn-text">Envoyer le message</span>
+                                <span class="btn-loading">Envoi en cours...</span>
+                            </button>
+                        </form>
+                        
+                        <!-- Message de confirmation -->
+                        <div class="form-success" id="form-success">
+                            <div class="success-icon">✅</div>
+                            <h3>Message envoyé avec succès !</h3>
+                            <p>Merci pour votre message. Je vous recontacterai dans les plus brefs délais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="contact-faq animate-on-scroll">
+                    <h2 class="section-title">Questions Fréquentes</h2>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Quels sont vos tarifs ?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Mes tarifs varient selon la complexité et l'ampleur du projet. Je propose toujours un devis personnalisé après notre premier échange pour comprendre vos besoins spécifiques.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Combien de temps prend un projet ?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>La durée dépend du type de projet : 2-3 semaines pour un logo, 4-6 semaines pour une identité complète, 6-8 semaines pour un site web. Je m'adapte à vos contraintes de timing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Travaillez-vous avec des clients internationaux ?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolument ! Je travaille régulièrement avec des clients du monde entier. Nous pouvons communiquer en français ou en anglais, et organiser nos échanges selon vos fuseaux horaires.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Proposez-vous des révisions ?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Oui, chaque projet inclut 2-3 rounds de révisions selon la complexité. Mon objectif est votre satisfaction complète, nous travaillons ensemble jusqu'à ce que le résultat soit parfait.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Quels fichiers recevrai-je ?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Vous recevrez tous les fichiers sources (AI, PSD, Figma) ainsi que les exports dans tous les formats nécessaires (PNG, JPG, SVG, PDF). Je fournis également un guide d'utilisation détaillé.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Menu contextuel -->
+    <div class="context-menu" id="context-menu">
+        <ul class="context-menu-list">
+            <li class="context-menu-item" data-action="view">
+                <span class="context-icon">👁️</span>
+                Voir en grand
+            </li>
+            <li class="context-menu-item" data-action="download">
+                <span class="context-icon">⬇️</span>
+                Télécharger
+            </li>
+            <li class="context-menu-item" data-action="share">
+                <span class="context-icon">🔗</span>
+                Partager
+            </li>
+        </ul>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

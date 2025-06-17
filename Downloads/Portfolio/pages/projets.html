@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Alex Dubois</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-projects">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Alex Dubois</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link active">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="apropos.html" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="processus.html" class="nav-link">Processus</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-main">
+        <div class="page-hero">
+            <div class="page-hero-content">
+                <h1 class="page-title animate-on-scroll">Mes Projets</h1>
+                <p class="page-subtitle animate-on-scroll">Une sélection de mes créations les plus représentatives</p>
+            </div>
+        </div>
+
+        <section class="projects-section">
+            <div class="container">
+                <!-- Filtres corrigés -->
+                <div class="filters-container animate-on-scroll">
+                  <button class="filter-btn active" data-filter="all">Tous</button>
+                  <button class="filter-btn" data-filter="branding">Branding</button>
+                  <button class="filter-btn" data-filter="illustration">Illustration</button>
+                  <button class="filter-btn" data-filter="packaging">Packaging</button>
+                  <button class="filter-btn" data-filter="web">Web Design</button>
+                </div>
+
+                <!-- Grille des projets -->
+                <div class="projects-gallery" id="projects-gallery">
+                    <!-- Projet 1: Tech Start -->
+                    <article class="project-item animate-on-scroll" data-category="branding" data-delay="0.1">
+                        <div class="project-image-container">
+                            <img src="https://img.freepik.com/photos-gratuite/energie-nucleaire-ia-future-innovation-technologie-rupture_53876-129784.jpg?ga=GA1.1.137724784.1750157064&semt=ais_hybrid&w=740" alt="Identité visuelle Tech Start" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Identité visuelle Tech Start</h3>
+                                    <p class="project-description">Création complète de l'identité visuelle pour une startup technologique innovante. Logo, charte graphique, déclinaisons.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Branding</span>
+                                        <span class="tag">Logo</span>
+                                        <span class="tag">Charte graphique</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-small btn-primary" onclick="openProjectModal('tech-start')">Voir le projet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2: Urban Dreams -->
+                    <article class="project-item animate-on-scroll" data-category="illustration" data-delay="0.2">
+                        <div class="project-image-container">
+                            <img src="https://i.pinimg.com/736x/3f/3c/02/3f3c02f0e75ce5c42e0c5ab5621b38c4.jpg" alt="Série Urban Dreams" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Illustration série "Urban Dreams"</h3>
+                                    <p class="project-description">Série d'illustrations digitales explorant l'esthétique urbaine contemporaine avec des techniques mixtes.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Illustration</span>
+                                        <span class="tag">Art digital</span>
+                                        <span class="tag">Urbain</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-small btn-primary" onclick="openProjectModal('urban-dreams')">Voir le projet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3: Bio Nature -->
+                    <article class="project-item animate-on-scroll" data-category="packaging" data-delay="0.3">
+                        <div class="project-image-container">
+                            <img src="https://i.pinimg.com/736x/bd/9c/2f/bd9c2f88f6b1ce3e94d665d231361a1a.jpg" alt="Packaging Bio Nature" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Packaging "Bio Nature"</h3>
+                                    <p class="project-description">Design de packaging écologique pour une gamme de produits biologiques, alliant esthétique moderne et valeurs durables.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Packaging</span>
+                                        <span class="tag">Écologique</span>
+                                        <span class="tag">3D</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-small btn-primary" onclick="openProjectModal('bio-nature')">Voir le projet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 4: Fashion Hub -->
+                    <article class="project-item animate-on-scroll" data-category="web" data-delay="0.4">
+                        <div class="project-image-container">
+                            <img src="https://i.pinimg.com/736x/cf/f1/09/cff109d525722e7187eab3f1eb825f9b.jpg" alt="Web design Fashion Hub" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Web design "Fashion Hub"</h3>
+                                    <p class="project-description">Interface moderne et élégante pour une plateforme de mode en ligne, optimisée pour l'expérience utilisateur.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Web Design</span>
+                                        <span class="tag">UI/UX</span>
+                                        <span class="tag">Mode</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-small btn-primary" onclick="openProjectModal('fashion-hub')">Voir le projet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projets supplémentaires -->
+                    <article class="project-item animate-on-scroll" data-category="branding" data-delay="0.5">
+                        <div class="project-image-container">
+                            <img src="https://i.pinimg.com/736x/10/47/c6/1047c66fc760f4400353a4b4dd3fa6b0.jpg" alt="Restaurant Moderne" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Restaurant "Le Moderne"</h3>
+                                    <p class="project-description">Identité complète pour restaurant gastronomique, du logo aux supports de communication.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Branding</span>
+                                        <span class="tag">Gastronomie</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-small btn-primary" onclick="openProjectModal('restaurant')">Voir le projet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item animate-on-scroll" data-category="illustration" data-delay="0.6">
+                        <div class="project-image-container">
+                            <img src="https://i.pinimg.com/736x/bc/c3/f9/bcc3f95e1d46afb9f396f9c9e30fe513.jpg" alt="Character Design" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Character Design Fantasy</h3>
+                                    <p class="project-description">Création de personnages pour univers fantastique, jeu vidéo et animation.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Character Design</span>
+                                        <span class="tag">Fantasy</span>
+                                    </div>
+                                </div>
+                                <div class="project-actions">
+                                    <button class="btn btn-small btn-primary" onclick="openProjectModal('character')">Voir le projet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal pour les projets -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Contenu dynamique -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu contextuel -->
+    <div class="context-menu" id="context-menu">
+        <ul class="context-menu-list">
+            <li class="context-menu-item" data-action="view">
+                <span class="context-icon">👁️</span>
+                Voir en grand
+            </li>
+            <li class="context-menu-item" data-action="download">
+                <span class="context-icon">⬇️</span>
+                Télécharger
+            </li>
+            <li class="context-menu-item" data-action="share">
+                <span class="context-icon">🔗</span>
+                Partager
+            </li>
+        </ul>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
